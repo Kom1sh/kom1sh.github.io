@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is Bitcoin? BTC Explained Simply — Satoshi Pulse</title>
+<meta name="description" content="What is a bitcoin, in plain English? How the network works, who controls it, why only 21 million will ever exist, and what BTC actually means — a clear 2026 explainer.">
+<link rel="canonical" href="https://satoshipulse.io/what-is-bitcoin/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Is Bitcoin? BTC Explained Simply — Satoshi Pulse">
+<meta property="og:description" content="What bitcoin is, how the network works, and why only 21 million coins will ever exist — a plain-English explainer.">
+<meta property="og:url" content="https://satoshipulse.io/what-is-bitcoin/">
+<meta property="og:site_name" content="Satoshi Pulse">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a bitcoin in simple terms?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A bitcoin is a unit of account on a public ledger called the Bitcoin blockchain — a database shared by thousands of computers worldwide. Owning bitcoin means controlling cryptographic keys that let you move entries on that ledger. No bank or company sits in the middle." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does BTC mean?",
+      "acceptedAnswer": { "@type": "Answer", "text": "BTC is the ticker symbol for bitcoin, used on exchanges the way USD is used for dollars. One BTC divides into 100 million smaller units called satoshis, or sats." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who controls Bitcoin?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No one person or organization. The rules are enforced by tens of thousands of independent nodes running open-source software. Changes require broad voluntary adoption, which is why the 21 million supply cap has never changed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are there only 21 million bitcoins?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The supply schedule is written into the code: new issuance halves every 210,000 blocks, roughly every four years, tapering asymptotically toward 21 million around the year 2140. Over 19.9 million already exist." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Satoshi Pulse home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs><linearGradient id="bgrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f7931a"/><stop offset="1" stop-color="#ffd580"/>
+        </linearGradient></defs>
+        <circle cx="16" cy="16" r="16" fill="url(#bgrad)"/>
+        <g fill="#0b0a10" transform="rotate(10 16 16)">
+          <path d="M13 9.5h3.6a3.3 3.3 0 0 1 0 6.6H13z"/>
+          <path d="M13 16.1h4.4a3.1 3.1 0 0 1 0 6.2H13z"/>
+          <rect x="10.8" y="7.6" width="1.7" height="16.8" rx="0.6"/>
+          <rect x="13.9" y="7.6" width="1.7" height="16.8" rx="0.6"/>
+        </g>
+      </svg>
+      Satoshi<em>Pulse</em>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/bitcoin-price/">Price</a>
+      <a href="/bitcoin-chart/">Chart</a>
+      <a href="/bitcoin-news/">News</a>
+      <a href="/what-is-bitcoin/" class="active">Learn</a>
+      <a href="/bitcoin-price-history/">History</a>
+      <a href="/bitcoin-market-cap/">Market Cap</a>
+      <a href="/should-i-buy-bitcoin/">Analysis</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    <div class="price-chip" title="Live BTC/USD via CoinGecko">
+      <span class="chip-label">BTC/USD</span>
+      <span class="chip-price js-btc-price">$114,650</span>
+      <span class="chip-change js-btc-change up">+1.8%</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Explainer · 6 min read</p>
+    <h1>What is a bitcoin? <span class="grad-text">The honest answer.</span></h1>
+    <p class="lede">Strip away the jargon and bitcoin is one thing: an entry on a public ledger that no single party controls. Everything else — the price, the mining, the politics — follows from that design.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap prose">
+    <h2>A ledger, not a coin</h2>
+    <p>There is no bitcoin "file" and nothing physical to hold. The Bitcoin blockchain is a shared accounting ledger — a list of who can spend what — replicated across tens of thousands of computers (nodes) worldwide. When someone "owns" bitcoin, they control a private key: a secret number that lets them sign transactions moving entries on that ledger. Lose the key, and the coins sit on the ledger forever, unspendable. Roughly 19.9 million BTC have been issued since the network launched on January 3, 2009; a hard-coded cap of 21 million will be approached around the year 2140.</p>
+    <p><strong>BTC</strong> is simply the ticker's shorthand — the way exchanges quote one unit of bitcoin, the same way USD quotes a dollar. Each BTC divides into 100 million satoshis ("sats"), so at a price of $114,650, one US dollar buys about 872 sats. You never need to buy a whole coin.</p>
+
+    <h2>How a transaction actually works</h2>
+    <p>Say you pay someone 0.01 BTC. Your wallet software builds a transaction, signs it with your private key, and broadcasts it. Within seconds, thousands of nodes check the signature and confirm you control the funds. Miners then bundle your transaction with others into a block — roughly every ten minutes — and race to seal that block with a proof-of-work computation that currently costs enormous amounts of electricity. That cost is the security model: rewriting history would require redoing all that work faster than the rest of the network combined, which has never happened. After a few blocks, the payment is effectively irreversible. No card network, no bank, no business hours.</p>
+
+    <h2>Who's in charge? Nobody — on purpose</h2>
+    <p>Bitcoin's rules — the 21 million cap, the ten-minute block target, the halving every 210,000 blocks — are enforced by the independent nodes, not declared by a foundation. Changing them requires the people running those nodes to voluntarily adopt new software. Contentious changes have been attempted and have failed; the supply cap has never moved in seventeen years. This is why bitcoin is described as "credibly neutral": its monetary policy is closer to a physical constant than to a corporate decision.</p>
+
+    <h2>Why it has value at all</h2>
+    <p>Bitcoin pays no yield and backs no cash flows, so its value rests on scarcity plus demand — like gold, but with a supply schedule anyone can audit in seconds. As of October 2026 the network's market value is about <b class="mono js-btc-mcap" style="color:var(--ink);">$2.28T</b>, held by individuals, ETFs, corporations and a handful of governments. Skeptics note, correctly, that the price has fallen 70%+ four separate times. Believers note, also correctly, that every prior cycle low has eventually been exceeded. Both facts belong in any honest answer to <a href="/should-i-buy-bitcoin/">"should I buy bitcoin?"</a></p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>What does BTC mean?</h3>
+      <p>BTC is the ticker symbol for one bitcoin, used on exchanges worldwide. A smaller unit, the satoshi, is one hundred-millionth of a BTC.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is bitcoin real money?</h3>
+      <p>It functions as money in specific contexts — it is legal tender in El Salvador and settles billions of dollars of transfers daily — but most holders treat it as a scarce asset rather than spending money.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can Bitcoin be shut down?</h3>
+      <p>No single government can switch it off, because the ledger exists on thousands of machines in over a hundred countries. States can restrict on-ramps like exchanges, and some have, but the network itself has run uninterrupted since 2009.</p>
+    </div>
+    <div class="related-links">
+      <a href="/bitcoin-price/">Live price</a>
+      <a href="/how-much-is-bitcoin-worth/">How much is 1 BTC?</a>
+      <a href="/bitcoin-price-history/">Price history</a>
+      <a href="/bitcoin-stock/">Bitcoin &amp; stocks</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">Satoshi<em>Pulse</em></a>
+        <p>Independent, single-asset Bitcoin coverage: price, charts, history and plain-English explainers. Written and updated for 2026.</p>
+      </div>
+      <div>
+        <h4>Markets</h4>
+        <ul>
+          <li><a href="/bitcoin-price/">Bitcoin Price</a></li>
+          <li><a href="/bitcoin-chart/">Bitcoin Chart</a></li>
+          <li><a href="/bitcoin-market-cap/">Market Cap</a></li>
+          <li><a href="/bitcoin-stock/">Bitcoin &amp; Stocks</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="/what-is-bitcoin/">What Is Bitcoin?</a></li>
+          <li><a href="/bitcoin-price-history/">Price History</a></li>
+          <li><a href="/how-much-is-bitcoin-worth/">How Much Is 1 BTC?</a></li>
+          <li><a href="/should-i-buy-bitcoin/">Should I Buy?</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Desk</h4>
+        <ul>
+          <li><a href="/bitcoin-news/">Bitcoin News</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Satoshi Pulse. Not financial advice. Do your own research.</span>
+      <span>BTC/USD via CoinGecko &middot; delayed up to 60s</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

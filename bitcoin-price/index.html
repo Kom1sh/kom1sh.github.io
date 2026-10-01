@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitcoin Price Today: Live BTC to USD — Satoshi Pulse</title>
+<meta name="description" content="Live Bitcoin price in USD, updated every 60 seconds. Track the current BTC price today, 24h change, market cap, and convert BTC to USD instantly.">
+<link rel="canonical" href="https://satoshipulse.io/bitcoin-price/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bitcoin Price Today: Live BTC to USD — Satoshi Pulse">
+<meta property="og:description" content="Live BTC/USD quote, 24h change, market cap and a two-way Bitcoin converter. Updated every 60 seconds.">
+<meta property="og:url" content="https://satoshipulse.io/bitcoin-price/">
+<meta property="og:site_name" content="Satoshi Pulse">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the current Bitcoin price in USD?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The live BTC/USD quote at the top of this page refreshes every 60 seconds from aggregated exchange data. As of October 2026, bitcoin has been trading in the $110,000–$115,000 range." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the BTC price differ between exchanges?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bitcoin trades on hundreds of independent venues, and each order book clears at its own price. Spreads between major USD exchanges are usually under 0.1%; aggregator quotes blend them into a single index price." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often does the Bitcoin price update?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bitcoin trades 24/7, so the price changes every second somewhere in the world. This page polls new data once per minute, which is more than adequate for anything except high-frequency trading." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Satoshi Pulse home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs><linearGradient id="bgrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f7931a"/><stop offset="1" stop-color="#ffd580"/>
+        </linearGradient></defs>
+        <circle cx="16" cy="16" r="16" fill="url(#bgrad)"/>
+        <g fill="#0b0a10" transform="rotate(10 16 16)">
+          <path d="M13 9.5h3.6a3.3 3.3 0 0 1 0 6.6H13z"/>
+          <path d="M13 16.1h4.4a3.1 3.1 0 0 1 0 6.2H13z"/>
+          <rect x="10.8" y="7.6" width="1.7" height="16.8" rx="0.6"/>
+          <rect x="13.9" y="7.6" width="1.7" height="16.8" rx="0.6"/>
+        </g>
+      </svg>
+      Satoshi<em>Pulse</em>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/bitcoin-price/" class="active">Price</a>
+      <a href="/bitcoin-chart/">Chart</a>
+      <a href="/bitcoin-news/">News</a>
+      <a href="/what-is-bitcoin/">Learn</a>
+      <a href="/bitcoin-price-history/">History</a>
+      <a href="/bitcoin-market-cap/">Market Cap</a>
+      <a href="/should-i-buy-bitcoin/">Analysis</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    <div class="price-chip" title="Live BTC/USD via CoinGecko">
+      <span class="chip-label">BTC/USD</span>
+      <span class="chip-price js-btc-price">$114,650</span>
+      <span class="chip-change js-btc-change up">+1.8%</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Live quote · refreshes every 60s</p>
+    <h1>Bitcoin price today: <span class="grad-text js-btc-price">$114,650</span></h1>
+    <p class="lede">The current Bitcoin price in USD, aggregated from major spot exchanges and updated once a minute. Below the quote: a two-way converter and the context behind the number.</p>
+    <p class="updated">Last refreshed: October 2026 · Source: CoinGecko aggregated index</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="bento">
+      <div class="glass half reveal">
+        <p class="card-label">BTC / USD</p>
+        <h3 class="chart-price js-btc-price" style="font-size:clamp(30px,4vw,44px);">$114,650</h3>
+        <p><span class="js-btc-change up mono">+1.8%</span> <span style="color:var(--ink-faint);font-size:13px;">past 24 hours</span></p>
+        <p style="margin-top:14px;">Market cap <b class="mono js-btc-mcap" style="color:var(--ink);">$2.28T</b> · $1 buys <b class="mono js-btc-sats" style="color:var(--ink);">872 sats</b></p>
+      </div>
+      <div class="glass half reveal" data-converter>
+        <p class="card-label">Converter</p>
+        <div class="converter">
+          <div class="conv-field">
+            <label for="btc-in">Bitcoin (BTC)</label>
+            <input id="btc-in" data-btc-input type="number" min="0" step="any" value="1" inputmode="decimal">
+          </div>
+          <div class="conv-swap" aria-hidden="true">&harr;</div>
+          <div class="conv-field">
+            <label for="usd-in">US Dollar (USD)</label>
+            <input id="usd-in" data-usd-input type="number" min="0" step="any" inputmode="decimal">
+          </div>
+        </div>
+        <p class="conv-note" data-conv-note>1 BTC = <b>$114,650</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+    <h2>What moves the BTC/USD price</h2>
+    <p>Bitcoin's price is set the old-fashioned way: bids meeting offers on open order books, around the clock, on every inhabited continent. There is no opening bell and no closing auction. When you see a single "bitcoin price," you are looking at an index — a weighted blend of quotes from venues like Coinbase, Kraken and Bitstamp — because no two exchanges clear at exactly the same number.</p>
+    <p>In 2026 the dominant price drivers look different from earlier cycles. <strong>Spot ETF flows</strong> — the daily creation and redemption of shares in funds like BlackRock's IBIT — now absorb or supply thousands of BTC per day and get published every afternoon. <strong>The April 2024 halving</strong> cut new issuance to 3.125 BTC per block, roughly 450 coins a day, which means ETF demand alone regularly exceeds fresh supply by an order of magnitude. And <strong>US macro policy</strong> still sets the tide: bitcoin has traded like a high-beta liquidity asset since 2020, rallying when real yields fall and de-risking when the dollar strengthens.</p>
+    <h2>How to read the number on this page</h2>
+    <p>The quote above is a spot reference, not a guaranteed execution price. If you place a market order for a meaningful size, you will walk the order book and pay slightly more (or receive slightly less) than the mid-quote — the difference is slippage, and on liquid pairs it is usually a few basis points. The 24-hour change is a rolling window, not a calendar day, so it can look "wrong" against a candlestick chart that opens at midnight UTC.</p>
+    <p>For longer context, the <a href="/bitcoin-chart/">2026 price chart</a> shows how this quote fits into the year's range, and the <a href="/bitcoin-price-history/">full price history</a> puts six-figure bitcoin against every prior cycle. If you are trying to value a specific amount, our <a href="/how-much-is-bitcoin-worth/">"how much is one bitcoin worth"</a> page quotes the rate in dollars, sats and common purchase sizes.</p>
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>What is the current Bitcoin price in USD?</h3>
+      <p>The live quote at the top of this page refreshes every 60 seconds. As of October 2026, bitcoin has spent most of the month trading between $110,000 and $115,000.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why does the BTC price differ between exchanges?</h3>
+      <p>Each exchange runs its own order book. Spreads between major USD venues are typically under 0.1%; this page shows a blended index rather than any single venue's last trade.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does Bitcoin ever close?</h3>
+      <p>No. The network has run continuously since January 3, 2009, and spot markets price it every second of every day, weekends and holidays included.</p>
+    </div>
+    <div class="related-links">
+      <a href="/bitcoin-chart/">Bitcoin chart</a>
+      <a href="/bitcoin-market-cap/">Market cap</a>
+      <a href="/bitcoin-news/">Bitcoin news</a>
+      <a href="/bitcoin-stock/">Bitcoin &amp; stocks</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">Satoshi<em>Pulse</em></a>
+        <p>Independent, single-asset Bitcoin coverage: price, charts, history and plain-English explainers. Written and updated for 2026.</p>
+      </div>
+      <div>
+        <h4>Markets</h4>
+        <ul>
+          <li><a href="/bitcoin-price/">Bitcoin Price</a></li>
+          <li><a href="/bitcoin-chart/">Bitcoin Chart</a></li>
+          <li><a href="/bitcoin-market-cap/">Market Cap</a></li>
+          <li><a href="/bitcoin-stock/">Bitcoin &amp; Stocks</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="/what-is-bitcoin/">What Is Bitcoin?</a></li>
+          <li><a href="/bitcoin-price-history/">Price History</a></li>
+          <li><a href="/how-much-is-bitcoin-worth/">How Much Is 1 BTC?</a></li>
+          <li><a href="/should-i-buy-bitcoin/">Should I Buy?</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Desk</h4>
+        <ul>
+          <li><a href="/bitcoin-news/">Bitcoin News</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Satoshi Pulse. Not financial advice. Do your own research.</span>
+      <span>BTC/USD via CoinGecko &middot; delayed up to 60s</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

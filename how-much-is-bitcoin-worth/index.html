@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Much Is One Bitcoin Worth Today? — Satoshi Pulse</title>
+<meta name="description" content="How much is 1 bitcoin worth right now? Live BTC to USD conversion, what common amounts cost, what $100 buys, and the satoshi math — updated every 60 seconds.">
+<link rel="canonical" href="https://satoshipulse.io/how-much-is-bitcoin-worth/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How Much Is One Bitcoin Worth Today? — Satoshi Pulse">
+<meta property="og:description" content="Live BTC to USD conversion with a two-way calculator: 1 BTC, 0.1 BTC, $100 in sats — the numbers, updated every minute.">
+<meta property="og:url" content="https://satoshipulse.io/how-much-is-bitcoin-worth/">
+<meta property="og:site_name" content="Satoshi Pulse">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much is one bitcoin worth in USD?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As of October 2026, one bitcoin is worth roughly $110,000–$115,000. The live quote on this page updates every 60 seconds from aggregated exchange data." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to buy a whole bitcoin?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Bitcoin divides to eight decimal places. Most exchanges let you buy as little as $1–$10 worth, denominated in fractions of a BTC or in satoshis." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a satoshi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A satoshi (sat) is one hundred-millionth of a bitcoin: 0.00000001 BTC. At $114,650 per BTC, one dollar buys about 872 sats." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Satoshi Pulse home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs><linearGradient id="bgrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f7931a"/><stop offset="1" stop-color="#ffd580"/>
+        </linearGradient></defs>
+        <circle cx="16" cy="16" r="16" fill="url(#bgrad)"/>
+        <g fill="#0b0a10" transform="rotate(10 16 16)">
+          <path d="M13 9.5h3.6a3.3 3.3 0 0 1 0 6.6H13z"/>
+          <path d="M13 16.1h4.4a3.1 3.1 0 0 1 0 6.2H13z"/>
+          <rect x="10.8" y="7.6" width="1.7" height="16.8" rx="0.6"/>
+          <rect x="13.9" y="7.6" width="1.7" height="16.8" rx="0.6"/>
+        </g>
+      </svg>
+      Satoshi<em>Pulse</em>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/bitcoin-price/">Price</a>
+      <a href="/bitcoin-chart/">Chart</a>
+      <a href="/bitcoin-news/">News</a>
+      <a href="/what-is-bitcoin/" class="active">Learn</a>
+      <a href="/bitcoin-price-history/">History</a>
+      <a href="/bitcoin-market-cap/">Market Cap</a>
+      <a href="/should-i-buy-bitcoin/">Analysis</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    <div class="price-chip" title="Live BTC/USD via CoinGecko">
+      <span class="chip-label">BTC/USD</span>
+      <span class="chip-price js-btc-price">$114,650</span>
+      <span class="chip-change js-btc-change up">+1.8%</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Live conversion · updates every 60s</p>
+    <h1>How much is one bitcoin worth? <span class="grad-text js-btc-price">$114,650</span></h1>
+    <p class="lede">That is the live answer, refreshed every minute. Below: the two-way converter, the cost of common purchase sizes, and why nobody needs to buy a whole coin.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="glass reveal" data-converter style="max-width:820px;">
+      <p class="card-label">BTC &harr; USD converter</p>
+      <div class="converter">
+        <div class="conv-field">
+          <label for="btc-in2">Bitcoin (BTC)</label>
+          <input id="btc-in2" data-btc-input type="number" min="0" step="any" value="1" inputmode="decimal">
+        </div>
+        <div class="conv-swap" aria-hidden="true">&harr;</div>
+        <div class="conv-field">
+          <label for="usd-in2">US Dollar (USD)</label>
+          <input id="usd-in2" data-usd-input type="number" min="0" step="any" inputmode="decimal">
+        </div>
+      </div>
+      <p class="conv-note" data-conv-note>1 BTC = <b>$114,650</b></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+    <h2>The number changes every second — here's the anchor</h2>
+    <p>There is no official bitcoin price. What you see above is an index: a blend of the last trades across major USD exchanges, recomputed continuously. When someone asks "what does one bitcoin cost," the honest answer is "whatever the deepest order books are clearing right now, plus your venue's fee." Retail brokers typically charge 0.5%–1.5% per purchase, so the effective cost of 1 BTC is the quote above plus that spread.</p>
+
+    <h2>You don't need $114,650 to own bitcoin</h2>
+    <p>Bitcoin divides to eight decimal places, and every mainstream exchange sells fractions. At the current quote:</p>
+  </div>
+  <div class="wrap">
+    <div class="table-scroll reveal">
+      <table class="data-table">
+        <thead>
+          <tr><th>Amount</th><th>Approx. USD value</th><th>In satoshis</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="num">1 BTC</td><td class="num">~$114,650</td><td class="num">100,000,000 sats</td></tr>
+          <tr><td class="num">0.1 BTC</td><td class="num">~$11,465</td><td class="num">10,000,000 sats</td></tr>
+          <tr><td class="num">0.01 BTC</td><td class="num">~$1,147</td><td class="num">1,000,000 sats</td></tr>
+          <tr><td class="num">0.001 BTC</td><td class="num">~$115</td><td class="num">100,000 sats</td></tr>
+          <tr><td class="num">$100 of BTC</td><td class="num">~0.00087 BTC</td><td class="num">~87,200 sats</td></tr>
+          <tr><td class="num">$10 of BTC</td><td class="num">~0.000087 BTC</td><td class="num">~8,720 sats</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="wrap prose" style="margin-top:36px;">
+    <p>Many buyers now think in sats rather than whole coins — "stacking sats" — because the unit bias of a six-figure price is real: 0.001 BTC feels trivial until you remember it is $115. Dollar-cost averaging a fixed dollar amount weekly is the most common retail strategy; our <a href="/should-i-buy-bitcoin/">buying analysis</a> explains how DCA changes your average entry price across bitcoin's cycles.</p>
+
+    <h2>What "worth" actually means here</h2>
+    <p>A stock's worth can be anchored to earnings; a bond's to coupon payments. Bitcoin has neither, so its dollar value is purely the meeting point of supply and demand — 19.93 million issued coins against everyone who wants to hold them, from individuals to <a href="/bitcoin-market-cap/">treasury companies and ETFs</a>. That makes the price volatile by design: bitcoin has halved in value within months more than once, and has also multiplied tenfold in under two years. The current quote sits about 9% below the October 2025 all-time high near $126,000, per our <a href="/bitcoin-price-history/">price history</a>.</p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>How much is 1 bitcoin to USD right now?</h3>
+      <p>The figure in this page's headline is the live index quote, refreshed every 60 seconds. It may differ from a specific exchange's last trade by a fraction of a percent.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why did bitcoin get so expensive?</h3>
+      <p>Fixed supply meeting growing demand. Only 21 million coins will ever exist, issuance halves every four years, and since 2024 US spot ETFs and corporate treasuries have competed for a shrinking float.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can bitcoin's value go to zero?</h3>
+      <p>In principle, yes — any asset priced purely by demand can lose that demand. Seventeen years of continuous operation and deepening institutional ownership make the scenario less likely over time, but it has never been impossible, and position sizing should reflect that.</p>
+    </div>
+    <div class="related-links">
+      <a href="/bitcoin-price/">Live price</a>
+      <a href="/what-is-bitcoin/">What is bitcoin?</a>
+      <a href="/should-i-buy-bitcoin/">Should I buy?</a>
+      <a href="/bitcoin-chart/">2026 chart</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">Satoshi<em>Pulse</em></a>
+        <p>Independent, single-asset Bitcoin coverage: price, charts, history and plain-English explainers. Written and updated for 2026.</p>
+      </div>
+      <div>
+        <h4>Markets</h4>
+        <ul>
+          <li><a href="/bitcoin-price/">Bitcoin Price</a></li>
+          <li><a href="/bitcoin-chart/">Bitcoin Chart</a></li>
+          <li><a href="/bitcoin-market-cap/">Market Cap</a></li>
+          <li><a href="/bitcoin-stock/">Bitcoin &amp; Stocks</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="/what-is-bitcoin/">What Is Bitcoin?</a></li>
+          <li><a href="/bitcoin-price-history/">Price History</a></li>
+          <li><a href="/how-much-is-bitcoin-worth/">How Much Is 1 BTC?</a></li>
+          <li><a href="/should-i-buy-bitcoin/">Should I Buy?</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Desk</h4>
+        <ul>
+          <li><a href="/bitcoin-news/">Bitcoin News</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Satoshi Pulse. Not financial advice. Do your own research.</span>
+      <span>BTC/USD via CoinGecko &middot; delayed up to 60s</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
